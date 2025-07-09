@@ -5,11 +5,11 @@ on: [push]
 jobs:
   sast_scan:
     name: Run Bandit Scan
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # This job will run on the latest available version of an Ubuntu Linux virtual machine hosted by Github.
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: Checkout code 
+      uses: actions/checkout@v2 # Uses a pre-built Github Action v2 that checks out the repository's code on the runner machine
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -20,4 +20,4 @@ jobs:
       run: pip install bandit
 
     - name: Run Bandit Scan
-      run: bandit -r . # All the files in the folder will be scanned recursively
+      run: bandit -r . # Tells Bandit to scan the current directory recursively (.) and all its subdirectories for Python files.
