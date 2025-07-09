@@ -20,4 +20,14 @@ jobs:
       run: pip install bandit
 
     - name: Run Bandit Scan
-      run: bandit -ll -ii -r . # Tells Bandit to scan the current directory recursively (.) and all its subdirectories for Python files.
+      # Tells Bandit to scan the current directory recursively (.) and all its subdirectories for Python files.
+      # Export it in json format and name the file bandit-report.json
+      run: bandit -ll -ii -r . -f json -o bandit-report.json 
+      
+      # 
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      if: always()
+      with: 
+        name: bandit-findings
+        path: bandit-report.json
