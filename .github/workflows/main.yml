@@ -47,7 +47,7 @@ jobs:
         run: echo "${{ secrets.REPO_PASSWORD }}" | docker login --username "${{ secrets.REPO_USER }}" --password-stdin
 
       - name: Build Docker Image
-        run: docker build -f DevSecOps/Dockerfile -t myapp:latest .
+        run: docker build -f Dockerfile -t myapp:latest DevSecOps/
 
       - name: Install Docker Scout
         run: |
