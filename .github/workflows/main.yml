@@ -32,7 +32,7 @@ jobs:
         name: bandit-findings
         path: bandit-report.json
 
-    image_scan:
+  image_scan:
       name: Build Image and Run Image Scan
       runs-on: ubuntu-latest
 
