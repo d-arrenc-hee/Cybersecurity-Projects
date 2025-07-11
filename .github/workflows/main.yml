@@ -44,7 +44,7 @@ jobs:
         run: docker --version  # optional check
 
       - name: Docker Login (required for Docker Scout)
-        run: echo ${{ secrets.REPO.PASSWORD }} | docker login --username ${{ secrets.REPO_USER }} --password-stdin
+        run: echo "${{ secrets.REPO_PASSWORD }}" | docker login --username "${{ secrets.REPO_USER }}" --password-stdin
 
       - name: Build Docker Image
         run: docker build -f Dockerfile -t myapp:latest .
