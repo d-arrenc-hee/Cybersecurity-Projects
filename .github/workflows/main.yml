@@ -41,7 +41,7 @@ jobs:
         uses: actions/checkout@v2
   
       - name: Set up Docker (default in ubuntu-latest)
-        run: docker --version  # optional check
+        run: docker --version
   
       - name: Build Docker Image
         run: docker build -f DevSecOps/Dockerfile -t myapp:latest DevSecOps/
@@ -51,13 +51,14 @@ jobs:
           curl -fsSL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh -o install-scout.sh
           sh install-scout.sh
   
-      - name: Authenticate Docker Scout
-        run: docker scout login --username "${{ secrets.REPO_USER }}" --token "${{ secrets.DOCKER_PAT }}"
+      - name: Docker Hub Login (for Scout to work)
+        run: echo "${{ secrets.REPO_PASSWORD }}" | docker login --username "${{ secrets.REPO_USER }}" --password-stdin
   
       - name: Run Docker Scout Scan
         run: |
           docker scout quickview myapp:latest
           docker scout cves myapp:latest
+
 
 
           
