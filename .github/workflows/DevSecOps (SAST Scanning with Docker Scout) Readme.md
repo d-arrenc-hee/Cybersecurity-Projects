@@ -1,4 +1,4 @@
-Explanation and Key Concepts:\
+## **Explanation and Key Concepts**:\
 • GitHub Workflows (.github/workflows/): GitHub Actions workflows are defined in YAML files placed in the .github/workflows/ directory of your repository. When you push this file, GitHub automatically detects and runs the workflow.\
 • on: push Trigger: This configures the workflow to run automatically whenever new code is pushed to your repository. This provides fast feedback on potential security issues introduced by new changes.\
 • Jobs and Parallel Execution: The workflow defines two independent jobs (sast-scan and image-scan). These jobs can run in parallel by default, which saves time in your pipeline.\
