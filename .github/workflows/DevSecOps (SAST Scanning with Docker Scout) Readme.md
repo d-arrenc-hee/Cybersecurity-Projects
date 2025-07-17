@@ -20,5 +20,7 @@
     ◦ if: always(): This conditional execution ensures that the reports are uploaded regardless of whether the scan step succeeded or failed. This is vital because you want to capture and analyze the findings even when vulnerabilities cause the scan to fail.\
     ◦ Vulnerability Management Tools: These reports (JSON, SARIF) are formatted for machine consumption and can be imported into vulnerability management tools like Defect Dojo. These tools provide a centralized UI to visualize, analyze, and manage security findings across multiple scans and tools, making it easier for teams to track and prioritize fixes.\
     
-### • GitHub Secrets: Sensitive information, such as your Docker Hub credentials, should never be hardcoded directly into your workflow files. Instead, they should be stored securely as GitHub Secrets, which are then referenced as environment variables in your workflow steps (${{ secrets.DOCKER_USER }}).
-This workflow provides a solid foundation for integrating DevSecOps practices into your GitHub repository, automating critical security checks early in your development process.\
+### • GitHub Secrets: 
+Sensitive information, such as your Docker Hub credentials, should never be hardcoded directly into your workflow files. Instead, they should be stored securely as GitHub Secrets, which are then referenced as environment variables in your workflow steps (${{ secrets.DOCKER_USER }}).
+
+This workflow provides a solid foundation for integrating DevSecOps practices into your GitHub repository, automating critical security checks early in your development process.
