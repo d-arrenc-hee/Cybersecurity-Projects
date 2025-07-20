@@ -23,6 +23,11 @@ URL: https://www.youtube.com/watch?v=gLJdrXPn0ns&t=133s \
 Content:
 Setting up an Amazon Elastic Compute Cloud (EC2) Web Server\
 Platform Details: Linux/Ubuntu\
+URL: https://www.youtube.com/watch?v=SLB_c_ayRMo&t=1251s\
+Pre-Requisites:
+  - Define Provider (AWS) and set up account
+  - Install Terraform
+  - Install Visual Studio Code
 Files: 
   - Cybersecurity-Projects/AWS_terraform_IaC/AWS_IaC_Project.tf - Terraform file
   - Cybersecurity-Projects/AWS_terraform_IaC/Web Server_AWS.png - Results on AWS
