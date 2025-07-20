@@ -8,7 +8,7 @@ This repository showcases some of my cybersecurity projects that I have done for
     - PenTesting_Project.sh\
     - PortScanner_Project.py
     
-## Course: DevSecOps Tutorial for Beginners | **CI Pipeline with GitHub Actions** and Docker Scout (Work in Progress)\
+## Course: DevSecOps Tutorial for Beginners | **CI Pipeline with GitHub Actions** and Docker Scout
 Content: 
 SAST Static Application Security Testing - Tools: Bandit\
 Docker Image Scanning - Tools: Docker\
