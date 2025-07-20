@@ -1,7 +1,7 @@
 # Cybersecurity-Projects
 This repository showcases some of my cybersecurity projects that I have done for the following courses:
 
-## Course: Centre for Cyber Security Institute\
+## Course: Centre for Cyber Security Institute
   Files:\
     - LinuxCommand_Project.sh\
     - NetworkResearch_Project.sh\
@@ -9,7 +9,7 @@ This repository showcases some of my cybersecurity projects that I have done for
     - PortScanner_Project.py
     
 ## Course: DevSecOps Tutorial for Beginners | **CI Pipeline with GitHub Actions** and Docker Scout (Work in Progress)\
-Content: \
+Content: 
 SAST Static Application Security Testing - Tools: Bandit\
 Docker Image Scanning - Tools: Docker\
 \
@@ -23,7 +23,7 @@ URL: https://www.youtube.com/watch?v=gLJdrXPn0ns&t=133s \
 Content:
 Setting up an Amazon Elastic Compute Cloud (EC2) Web Server\
 Platform Details: Linux/Ubuntu\
-Files: \
+Files: 
   - Cybersecurity-Projects/AWS_terraform_IaC/AWS_IaC_Project.tf - Terraform file
   - Cybersecurity-Projects/AWS_terraform_IaC/Web Server_AWS.png - Results on AWS
 
